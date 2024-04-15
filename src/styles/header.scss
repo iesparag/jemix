@@ -1,0 +1,144 @@
+.mainHeader {
+  height: 60px;
+  display: flex !important;
+  position: relative;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+  &__container {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    z-index: 101;
+    margin: 0;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  &__inner {
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 55px;
+  }
+  &__logo {
+    // height: 47px;
+      // width: 15%;
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 100%;
+      }
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &-item {
+      color: #4a4a4a;
+      text-decoration: none;
+      // padding: 10px 0;
+      position: relative;
+      transition: 0.3s ease color;
+      cursor: pointer;
+    }
+
+    &-navbtn {
+      width: 87px;
+      height: 22px;
+      text-transform: none;
+      text-decoration: none;
+      border-radius: 9px;
+      border: none;
+      text-align: center;
+      background: linear-gradient(
+        92.62deg,
+        rgba(153, 60, 100, 0.8) 4.08%,
+        rgba(219, 94, 103, 0.8) 99.19%
+      );
+      color: #fff;
+    }
+
+    &-select {
+      height: 30px;
+      color: #fff !important;
+      border: 1px solid #fff !important;
+
+      svg {
+        color: #fff !important;
+      }
+
+      ul {
+        li {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+}
+.menuToggleBtn {
+  display: none !important;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  border-radius: 25px !important;
+  font-family: "Inter", sans-serif !important;
+}
+@media only screen and (max-width: 1199px) {
+  
+  .mainHeader {
+    
+    &__inner {
+      padding: 5px 15px;
+    }
+    &__menu {
+      gap: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .menuToggleBtn {
+    display: flex !important;
+  }
+  .mainHeader {
+    // padding: 16px 0;
+
+    &__logo {
+      width: 25%;
+    }
+    &__menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: #fff;
+      flex-direction: column;
+      gap: 15px;
+      top: 90%;
+      z-index: 11;
+      padding: 10px 0;
+      /* border-top: 2px solid #eee; */
+      border-bottom: 2px solid #eee;
+    }
+    &.activeMenu {
+      .mainHeader__menu {
+        display: flex;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mainHeader {
+
+    &__logo {
+      width: 40%;
+    }
+   
+  }
+}

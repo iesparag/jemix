@@ -1,0 +1,144 @@
+.heroContent {
+  margin-top: 70px;
+  color: #000;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 38px;
+
+  &__text {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    // gap: 20px;
+    width: 100%;
+
+    h1 {
+      font-size: 70px;
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      color: #4a4a4a;
+      padding-bottom: 15px;
+    }
+    h6 {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      color: #4a4a4a;
+      padding-bottom: 32px;
+      width: 35%;
+    }
+  }
+  &__textHeading {
+    padding-bottom: 21px;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: #4a4a4a;
+    text-transform: uppercase;
+  }
+  &__details {
+    text-align: center;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: none !important;
+  }
+
+  .button {
+    box-shadow: none;
+    border-radius: 50px;
+    background: #4a4a4a;
+    display: inline-flex;
+    height: 48px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    &-icon {
+      transform: rotate(90deg);
+    }
+    &:hover {
+      background: #727272;
+      color: #fff;
+    }
+  }
+  img {
+    width: 100%;
+    z-index: 10;
+    position: relative;
+  }
+
+  .heroGradient {
+    position: relative;
+    top: 55px;
+    width: 100%;
+    display: block;
+    z-index: -10;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .heroContent {
+    h6 {
+      width: 90%;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .heroContent {
+    gap: 20px;
+    // width: 96% !important;
+
+    &__text {
+      gap: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .heroContent {
+    gap: 20px;
+    width: 100% !important;
+
+    &.MuiContainer-maxWidthLg {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .MuiBox-root {
+      width: 100%;
+    }
+
+    &__text {
+      gap: 0px;
+      width: 90%;
+
+      h1 {
+        font-size: 34px;
+        padding-bottom: 0;
+      }
+      h6 {
+        width: 100%;
+        padding: 30px 0;
+      }
+    }
+
+    .details {
+      width: 300px;
+    }
+  }
+  .numberSection {
+    padding-bottom: 0;
+  }
+}

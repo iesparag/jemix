@@ -1,0 +1,380 @@
+.contactForm {
+  display: flex !important;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  .bgImg {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 820px;
+    }
+  }
+  &__detail {
+    margin: 0 !important;
+    width: 100% !important;
+    background-image: url(../assets/SVG/detailform-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    h1 {
+      color: #4a4a4a;
+      font-family: "Inter", sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      text-align: start;
+
+      span {
+        color: #ac4665;
+      }
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: start;
+      color: #00a880;
+      text-transform: uppercase;
+    }
+
+    img {
+      display: block;
+      height: 100%;
+      position: absolute;
+    }
+    .detailsForm {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 50px;
+      padding-left: 100px;
+      max-width: 800px;
+      margin-left: auto;
+
+      .textHead {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 50px;
+
+        h4 {
+          color: #4a4a4a;
+          font-family: "Inter", sans-serif;
+          font-size: 19px;
+          font-weight: 600;
+          letter-spacing: -0.04em;
+          text-align: start;
+        }
+
+        hr {
+          border: 1px solid #4a4a4a;
+          width: 500px;
+        }
+
+        .button {
+          color: #fff;
+          background: #4a4a4a;
+          box-shadow: none;
+          display: inline-flex;
+          height: 48px;
+          padding: 16px 24px;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          flex-shrink: 0;
+          border-radius: 50px;
+          font-family: "Inter", sans-serif;
+          font-size: 14px;
+
+          &:hover {
+            background: #727272;
+            color: #fff;
+          }
+        }
+      }
+
+      label + .css-l4u8b9-MuiInputBase-root-MuiInput-root {
+        margin-top: 16px;
+        width: 100%;
+      }
+
+      label {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+
+    .parentContainer {
+      height: 768px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-size: contain;
+      background-position: bottom;
+      .containerDesk {
+        padding-top: 90px;
+        max-width: 520px;
+        margin: auto;
+        width: 100%;
+
+        .addressBox {
+          display: flex;
+          padding-bottom: 31px;
+          max-width: 208px;
+          padding-left: 30px;
+        }
+
+        .emailBox {
+          display: flex;
+          justify-content: center;
+          max-width: 180px;
+          padding-bottom: 24px;
+          margin-left: auto;
+          padding-right: 80px;
+        }
+
+        .phoneBox {
+          display: flex;
+          justify-content: flex-start;
+          max-width: 221px;
+          margin-left: -50px;
+        }
+
+        .boxContact {
+          background-color: #fff;
+          display: flex;
+          border-radius: 24px;
+          box-shadow: 0px 4px 38px 0px rgba(0, 0, 0, 0.0784313725);
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 15px 31px;
+          box-shadow: 0px 4px 38px 0px #00000014;
+          gap: 10px;
+          width: 100%;
+
+          img {
+            height: 40px;
+            position: relative;
+          }
+        }
+
+        p {
+          font-size: 13px;
+          color: #4a4a4a;
+          text-transform: none;
+          font-family: "Inter", sans-serif;
+
+          a {
+            font-size: 13px;
+            color: #4a4a4a;
+            text-decoration: none;
+            font-family: "Inter", sans-serif;
+          }
+        }
+      }
+    }
+  }
+
+  .formGrid {
+    padding-left: 0px;
+  }
+
+  .containerBox {
+    display: none;
+  }
+  .parentSmallContainer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .contactForm {
+    &__detail {
+      .parentContainer {
+        .containerDesk {
+          .addressBox {
+            padding-bottom: 10px;
+          }
+          .emailBox {
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .contactForm {
+    &__detail {
+      .parentContainer {
+        height: 658px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1299px) {
+  .contactForm {
+    &__detail {
+      .parentContainer {
+        .containerDesk {
+          .boxContact {
+            width: auto;
+          }
+          .addressBox {
+            padding-left: 40px;
+          }
+          .phoneBox {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contactForm {
+    &__detail {
+      padding: 0 15px;
+      h1 {
+        font-size: 30px;
+      }
+
+      .detailsForm {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 !important;
+        .textHead {
+        }
+        .form {
+          width: 100%;
+        }
+      }
+    }
+    .parentContainer {
+      display: none;
+    }
+    .parentSmallContainer {
+      display: block;
+
+      .containerDesk {
+        justify-content: center;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+
+        .boxContact {
+          width: 130px;
+          height: 70px;
+          background-color: #fff;
+          display: flex;
+          border-radius: 24px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 15px;
+          box-shadow: 0px 4px 38px 0px #00000014;
+          gap: 10px;
+
+          img {
+            height: 20px;
+            position: relative;
+            display: block;
+          }
+        }
+
+        p,
+        a {
+          font-size: 12px;
+          color: #4a4a4a;
+          text-transform: none;
+          font-family: "Inter", sans-serif;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contact {
+    .contactForm {
+      &__detail {
+        .detailsForm {
+          .textHead {
+            width: 100%;
+          }
+          .form {
+            gap: 20px;
+            .MuiGrid-item {
+              padding-top: 15px;
+            }
+            label {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .bgImg {
+        height: 100%;
+      }
+    }
+  }
+  .parentSmallContainer {
+    .boxContact {
+      width: calc(100% - 30px) !important;
+      height: auto;
+    }
+    .containerDesk {
+      gap: 10px !important;
+      p,
+      a {
+        font-size: 11px !important;
+      }
+    }
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .contactForm {
+    &__detail {
+      .detailsForm {
+        .form {
+          .button {
+            height: auto;
+            padding: 10px 15px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .parentSmallContainer {
+      
+      .containerDesk {
+        flex-direction: column;
+        > .MuiBox-root {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

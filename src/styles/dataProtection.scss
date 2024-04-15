@@ -1,0 +1,58 @@
+.dataContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 50px;
+
+    h1 {
+        display: block;
+        color: #4a4a4a;
+        font-family: 'Inter', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+        text-align: start;
+      }
+      p {
+        display: block;
+        color: #4a4a4a;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.04em;
+        text-align: start;
+      }
+      h2 {
+        display: block;
+        color: #4a4a4a;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        text-align: start;
+      }
+      ul{ 
+        li{
+        display: block;
+        color: #4a4a4a;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.04em;
+        text-align: start;
+        list-style-type: circle;
+      }
+    }
+      ol{ 
+        li{
+        display: block;
+        color: #4a4a4a;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: -0.04em;
+        text-align: start;
+        list-style-type: decimal;
+    }
+    }
+}

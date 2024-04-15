@@ -1,0 +1,30 @@
+.customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+
+  h1 {
+    color: #4a4a4a;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    text-align: start;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .customers {
+    padding: 15px;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .customers {
+    display: none;
+  }
+}

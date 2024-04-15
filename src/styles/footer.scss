@@ -1,0 +1,115 @@
+.footersection {
+  background-color: #4a4a4a;
+  padding: 50px !important;
+
+  p {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+    .logoside {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .menu-items {
+    position: relative;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+
+    .nav-link {
+      display: block;
+      padding-block: 20px;
+      padding-inline: 12px;
+      text-decoration: none;
+      color: #fff;
+      height: 100%;
+      transition: 0.3s ease color;
+      cursor: pointer;
+    }
+  }
+
+  .copyrightarea {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: #e2e2e263;
+      font-family: 'Inter', sans-serif;
+    }
+    .side {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .nav-link{
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        font-size: 14px;
+        
+      }
+    }
+  }
+
+  .sideSmall {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .footersection {
+    p {
+      text-align: center;
+    }
+
+    .container {
+      flex-direction: column;
+      gap: 26px;
+    }
+
+    .menu-items {
+      flex-direction: column;
+      .nav-link {
+        font-size: 14px;
+        padding-block: 6px;
+      }
+    }
+
+    .sideSmall {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 6px;
+
+      p {
+        font-size: 14px;
+      }
+      .nav-link {
+        font-size: 14px;
+        display: block;
+        padding-block: 6px;
+      }
+    }
+    .copyrightarea {
+      padding-top: 20px;
+
+      .side {
+        display: none;
+      }
+    }
+  }
+}
